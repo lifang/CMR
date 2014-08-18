@@ -37,6 +37,7 @@
         [CMRDataService shared].flag = [[defaults objectForKey:@"flag"]integerValue];
         [CMRDataService shared].jurisdiction = [[defaults objectForKey:@"site_auth"]integerValue];
         if ([defaults objectForKey:@"strat_time"]) {
+            
              [CMRDataService shared].strat_time = [NSString stringWithFormat:@"%@",[defaults objectForKey:@"strat_time"]];
         }
         if ([defaults objectForKey:@"end_time"]) {
